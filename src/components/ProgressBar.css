@@ -1,0 +1,83 @@
+.progress__header {
+  height: 80px;
+  border-bottom: 1px solid rgb(216, 213, 213);
+  padding: 1em 1em 1.5em;
+}
+
+.progress__header > .progress__header__container {
+  display: flex;
+  align-items: center;
+}
+
+.progress__header > .progress__header__container > .left, 
+.progress__header__container > .right {
+  flex: 1;
+}
+
+.progress__header > .progress__header__container > .left > .question__title {
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.progress__header .progress__container {
+  display: flex;
+  align-items: center;
+}
+
+.progress__header .progress__container .progress__bar {
+  height: 10px;
+  /* border: 1px solid black; */
+  flex: 1;
+  position: relative;
+  margin-right: 10px;
+  background-color: lightgray;
+}
+
+.progress__header .progress__container .progress__bar > .progress__bar__indicator {
+  height: 100%;
+  width: 80%;
+  background-color: lightgreen;
+}
+
+.progress__header .progress__container .progress__bar > .progress__bar__indicator__status {
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  background-color: lightgreen;
+  color: #fff;
+  top: -10px;
+  position: absolute;
+  left: 80%;
+  border: 3px dashed rgb(124, 192, 36);
+  padding: 5px;
+}
+
+.progress__header .progress__container .progress__bar > .progress__bar__indicator__status > p {
+  font-weight: 600;
+  color: #000;
+}
+
+.progress__header > .progress__header__container > .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.progress__header > .progress__header__container > .right > .nav__btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(169, 165, 165);
+  display: grid;
+  place-content: center;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.progress__header > .progress__header__container > .right > .nav__btn > .nav__btn__icon {
+  height: 1em;
+  font-weight: 700;
+}

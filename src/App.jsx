@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import AllQuestionFrame from './components/AllQuestionFrame'
 import VideoFrame from './components/VideoFrame'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="app">
       <div className="snap__container">
         <VideoFrame />
-        <VideoFrame />
+        <AllQuestionFrame />
       </div>
     </div>
   )

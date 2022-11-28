@@ -1,0 +1,4 @@
+.all__question__frame {
+  height: 100vh;
+  scroll-snap-align: start;
+}
