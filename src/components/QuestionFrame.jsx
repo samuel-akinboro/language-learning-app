@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './QuestionFrame.css'
 import { motion } from 'framer-motion'
 
 const QuestionFrame = () => {
+  const constraintsRef = useRef(null)
+
   return (
     <div className='question__frame'>
       <div className="question__frame__container">
-        <div className="question__details">
+        <motion.div className="question__details" ref={constraintsRef}>
           <div className="option top">
             <p>Bear</p>
           </div>
@@ -19,12 +21,19 @@ const QuestionFrame = () => {
           <div className="option left">
             <p>Dog</p>
           </div>
-          <motion.div drag className="draggable">
+          <motion.div 
+            drag 
+            className="draggable"
+            dragElastic={0} 
+            // dragConstraints={constraintsRef}
+            dragConstraints={{ top: -130, left: -130, right: -50, bottom: -50 }}
+            // dragSnapToOrigin={true}
+          >
             <p>
               OSO
             </p>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
