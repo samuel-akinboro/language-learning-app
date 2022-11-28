@@ -1,5 +1,6 @@
 import React from 'react'
 import './QuestionFrame.css'
+import { motion } from 'framer-motion'
 
 const QuestionFrame = () => {
   return (
@@ -18,11 +19,11 @@ const QuestionFrame = () => {
           <div className="option left">
             <p>Dog</p>
           </div>
-          <div className="draggable">
+          <motion.div drag className="draggable">
             <p>
               OSO
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
