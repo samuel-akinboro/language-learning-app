@@ -1,5 +1,8 @@
 import React from 'react'
 import './VideoFrame.css'
+import {
+  ChevronDoubleDownIcon
+} from '@heroicons/react/24/solid'
 
 const VideoFrame = () => {
   return (
@@ -11,6 +14,9 @@ const VideoFrame = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
       >     
       </iframe>
+      <div className="scroll__down__indicator">
+        <ChevronDoubleDownIcon className='scroll__down__indicator__icon' />
+      </div>
     </div>
   )
 }
