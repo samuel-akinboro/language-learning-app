@@ -1,0 +1,10 @@
+.video__frame {
+  height: 100vh;
+  background-color: rgb(9, 55, 5);
+  scroll-snap-align: start;
+}
+
+.video__frame > .iframe {
+  height: 100%;
+  width: 100%;
+}
