@@ -9,7 +9,7 @@ const VideoFrame = () => {
     <div className='video__frame'>
       <iframe 
         className='iframe'
-        src="https://www.youtube.com/embed/G6a-h0Br5YA" 
+        src="https://www.youtube.com/embed/SLmEdQ1pcAM" 
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
       >     
