@@ -14,11 +14,12 @@
 
 .scroll__down__indicator{
   position: absolute;
-  bottom: 70px;
+  bottom: 5%;
   animation-name: topDown;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+  pointer-events: none;
 }
 
 .scroll__down__indicator__icon {
@@ -31,9 +32,9 @@
 
 @keyframes topDown {
   from {
-    bottom: 70px;
+    bottom: 5%;
   }
   to{
-    bottom: 120px;
+    bottom: 10%;
   }
 }
